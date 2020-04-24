@@ -114,17 +114,13 @@ def dataframe_to_date(usa_only, scale, date):
 # dropdown Items
 
 # make a reuseable navitem for the different examples
-nav_item = dbc.NavItem(dbc.NavLink("Dash Udemy Course",
-                                   href="https://www.udemy.com/course/plotly-dash/?referralCode=16FC11D8981E0863E557"))
+nav_item = dbc.NavItem(dbc.NavLink("Instagram",
+                                   href="https://www.instagram.com/amelgikha/"))
 
 # make a reuseable dropdown for the different examples
 dropdown = dbc.DropdownMenu(
     children=[
-        dbc.DropdownMenuItem("Youtube Channel",
-                             href='https://www.youtube.com/channel/UC-pBvv8mzLpj0k-RIbc2Nog?view_as=subscriber'),
-        dbc.DropdownMenuItem("Potluck App", href='https://cryptopotluck.com/'),
-        dbc.DropdownMenuItem(divider=True),
-        dbc.DropdownMenuItem("Project Github", href='https://github.com/cryptopotluck/Covid-19-Dash-Map'),
+        dbc.DropdownMenuItem("Project Github", href='https://github.com/amelgikha/dash_covid19'),
         dbc.DropdownMenuItem("Plotly / Dash", href='https://dash.plot.ly/'),
         dbc.DropdownMenuItem("Dash Bootstrap", href='https://dash-bootstrap-components.opensource.faculty.ai/'),
     ],
@@ -142,7 +138,7 @@ navbar = dbc.Navbar(
                 dbc.Row(
                     [
                         dbc.Col(html.Img(src=PLOTLY_LOGO, height="40px")),
-                        dbc.Col(dbc.NavbarBrand("Covid-19 Dashboard Course", className="ml-2")),
+                        dbc.Col(dbc.NavbarBrand("Virus Covid-19", className="ml-2")),
                     ],
                     align="center",
                     no_gutters=True,
@@ -197,7 +193,7 @@ tab_home = dbc.Card(
                                                      href='https://www.cdc.gov/coronavirus/2019-ncov/',
                                                      className="mr-1"),
                 dbc.Button("Order Masks", color="dark",
-                                                     href='https://www.n95breathingmask.com/',
+                                                     href='https://www.tokopedia.com/search?st=product&q=masker',
                                                      className="mr-1")
 
             ])], color="dark")),
