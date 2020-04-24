@@ -291,32 +291,6 @@ tabs = dbc.Tabs(
     ]
 )
 
-"""Body"""
-# rows
-body = html.Div(
-    [
-    dbc.Toast(
-
-            dbc.CardLink("Check Out Project Update Video", href="https://youtu.be/JoehvW-aUd4"),
-            id="positioned-toast",
-            header="Learn How to Build this Dashboard",
-            is_open=True,
-            dismissable=True,
-            icon="danger",
-            # top: 66 positions the toast below the navbar
-            style={"position": "fixed", "top": 66, "right": 10, "width": 350},
-        ),
-        dbc.Row(html.P('')),
-        dbc.Row(html.Div(tabs, style={'width': '100%'})),
-    ]
-)
-
-"""Layout"""
-
-app.layout = html.Div(
-    [navbar, body]
-)
-
 """Call back"""
 @app.callback(Output('date-content', 'children'),
               [
